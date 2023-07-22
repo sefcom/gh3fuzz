@@ -41,7 +41,7 @@ This creates a folder `fuzz_bins` in the parent in the parent directory.
 2) A fuzzing container for a given rehosted Greenhouse sample can be run via:
 
 ```
-python build_fuzz_img.py -f <path-to-rehosted-greenhouse-image.tar.gz> 
+python3 build_fuzz_img.py -f <path-to-rehosted-greenhouse-image.tar.gz> 
 docker run --privileged fuzzing_dude_img
 ```
 
