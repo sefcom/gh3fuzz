@@ -6,7 +6,16 @@ Note that `gh3fuzz` is largely experimental code and is mainly provided as a ref
 
 ## Requirements
 
+(Tested on Ubuntu 20.04)
+
+python3.7 or higher
 jinja2
+docker 24.0.4 or higher
+
+binfmt-support
+qemu-user-static
+
+`sudo apt-get install binfmt-support qemu-user-static`
 
 ## Instructions
 
