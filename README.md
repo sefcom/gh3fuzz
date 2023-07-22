@@ -36,7 +36,7 @@ python build_fuzz_img.py -f <path-to-rehosted-greenhouse-image.tar.gz>
 docker run --privileged fuzzing_dude_img
 ```
 
-3) AFL++ output is printed to stdout, while results can be found in the `/scratch` directory of the docker container. These can be copied out with `docker cp` and manually analyzed/examined accordingly. 
+3) AFL++ output is printed to stdout, while results can be found in the `/scratch/output` directory of the docker container. These can be copied out with `docker cp` and manually analyzed/examined accordingly. The fuzzing can be stopped by using `docker stop <container-name>`.
 
 Note that the docker container environment is pretty stripped down to optimize our fuzzing and uses only a basic `sh` as an interactive terminal.
 
